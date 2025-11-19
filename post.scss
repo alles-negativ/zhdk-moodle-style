@@ -1,1 +1,10 @@
-@import "./post/font.scss";
+@font-face {
+    font-family: 'test';
+    src: url("https://dev.paul.zhdk.ch/pluginfile.php/1/theme_boost_union/customfonts/0/FontAwesome7Free-Solid.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fa {
+    font-family: "test";
+}
