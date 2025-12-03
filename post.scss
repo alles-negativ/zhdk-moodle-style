@@ -71,6 +71,9 @@ body {
 .nav-tabs {
     gap: var(--gap-nav);
 }
+.moremenu .nav-link {
+    border-bottom-width: var(--border-width);
+}
 
 // Edit button
 .editmode-switch-form {
