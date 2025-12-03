@@ -82,6 +82,12 @@ body {
 
 .moremenu .nav-link {
     border-bottom-width: var(--border-width);
+
+    &:hover,
+    &:focus-visible {
+        background-color: transparent;
+        border-bottom-color: var(--color-border-input);
+    }
 }
 
 // Edit button
