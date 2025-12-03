@@ -159,3 +159,9 @@ button.btn-close:focus-visible,
 [role="treeitem"]:not([aria-expanded="true"]):focus-visible {
     box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 0.75);
 }
+
+
+// Typography
+.section-title {
+    font-size: var(--font-size-xl);
+}
