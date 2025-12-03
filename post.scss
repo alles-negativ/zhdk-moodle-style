@@ -14,9 +14,13 @@
     // Colors
     --color-black: #000;
     --color-border: #f1f1f1;
+    --color-border-input: #c7c7c7;
 
     // Gaps
     --gap-nav: 1.333rem;
+
+    // Borders
+    --border-width: 2px;
 }
 
 body {
@@ -38,9 +42,17 @@ body {
 }
 
 // Navigation
-.navbar.fixed-top {
-    border-bottom: 2px solid var(--color-border);
+.navbar {
+    .fixed-top {
+        border-bottom: var(--border-width) solid var(--color-border);
+
+        .divider {
+            border: var(--border-width) solid var(--color-border);
+            height: 100% !important;
+        }
+    }
 }
+
 //// warning: styling main navigation and subnavitation
 .navigation {
     .nav-link {
@@ -73,6 +85,15 @@ body {
 
     .custom-switch {
         display: flex;
+    }
+
+    .custom-control-label {
+        &::before {
+            border: var(--border-width) solid var(--color-border-input);
+        }
+
+        &::after {
+        }
     }
 }
 
