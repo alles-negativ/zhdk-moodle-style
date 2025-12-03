@@ -84,7 +84,8 @@ body {
     border-bottom-width: var(--border-width);
 
     &:hover,
-    &:focus-visible {
+    &:focus-visible,
+    &.active:hover {
         background-color: transparent;
         border-bottom-color: var(--color-border-input);
     }
