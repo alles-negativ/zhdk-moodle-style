@@ -22,6 +22,9 @@
 
     // Borders
     --border-width: 2px;
+
+    // Border radius
+    --border-radius: 0;
 }
 
 body {
@@ -142,6 +145,17 @@ body {
     }
 }
 
+// Dropdown
+.dropdown-menu {
+    border: var(--border-width) solid var(--color-border-input);
+    border-radius: var(--border-radius);
+    top: calc(100% - var(--border-width));
+}
+
+.dropdown-divider {
+    border-top-width: var(--border-width);
+}
+
 // Focus
 .aabtn.focus,
 .aabtn:focus,
@@ -204,25 +218,30 @@ button.btn-close:focus-visible,
 .section-title {
     font-size: var(--font-size-xl) !important;
 }
+
 .section,
 .activity-item,
 .activity,
 .hasbackground {
     border-radius: 0px !important;
 }
+
 .course-section-summary-wrapper {
     gap: 0px !important;
 }
 .section .side.right {
     margin-top: 4px !important;
 }
+
 // Activity Container
 .activityiconcontainer {
     position: absolute !important;
 }
+
 .activityinstance {
     gap: 0px !important;
 }
+
 .activitytitle {
     height: 32px !important;
 }
