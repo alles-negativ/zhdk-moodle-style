@@ -45,7 +45,8 @@ body {
     border-bottom: var(--border-width) solid var(--color-border);
 
     .divider {
-        border: var(--border-width) solid var(--color-border);
+        width: var(--border-width);
+        background-color: var(--color-border);
         height: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -159,7 +160,6 @@ button.btn-close:focus-visible,
 [role="treeitem"]:not([aria-expanded="true"]):focus-visible {
     box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 0.75);
 }
-
 
 // Course Content Typography
 .section-title {
