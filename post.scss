@@ -22,6 +22,9 @@
 
     // Borders
     --border-width: 2px;
+
+    // Border radius
+    --border-radius: 0;
 }
 
 body {
@@ -140,6 +143,17 @@ body {
     &::after {
         transform: translateX(0.866rem);
     }
+}
+
+// Dropdown
+.dropdown-menu {
+    border: var(--border-width) solid var(--color-border-input);
+    border-radius: var(--border-radius);
+    top: calc(100% - var(--border-width));
+}
+
+.dropdown-divider {
+    border-top-width: var(--border-width);
 }
 
 // Focus
