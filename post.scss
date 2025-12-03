@@ -1,11 +1,11 @@
 // Global
-/* :root {
+:root {
     --font-family-sans-serif: $font-family;
-} */
+}
 
-/* body {
+body {
     font-family: $font-family;
-} */
+}
 
 // Icons
 @font-face {
@@ -19,7 +19,7 @@
 .fa {
     font-family: "test";
 }
-/*
+
 // Navigation
 //// warning: styling main navigation and subnavitation
 .navigation {
@@ -38,4 +38,4 @@
 .navbar-nav,
 .nav-tabs {
     gap: 20px;
-} */
+}
