@@ -8,6 +8,7 @@
     --font-size-sm: 0.866rem; // 13px
 
     // Font Weights
+    --font-weight-title: 700;
     --font-weight-nav: 700;
     --font-weight-button: 700;
 
@@ -15,6 +16,7 @@
     --color-black: #000;
     --color-text: var(--color-black);
     --color-border: #f1f1f1;
+    --color-card: #f1f1f1;
     --color-border-input: #c7c7c7;
 
     // Gaps
@@ -233,7 +235,7 @@ button.btn-close:focus-visible,
 
 .activity-item {
     border: 0 !important;
-    background-color: #f1f1f1 !important;
+    background-color: var(--color-card) !important;
 }
 
 .course-section-summary-wrapper {
@@ -256,4 +258,9 @@ button.btn-close:focus-visible,
 
 .activitytitle {
     height: 32px !important;
+}
+
+.instancename {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-title);
 }
