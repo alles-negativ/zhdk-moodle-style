@@ -13,6 +13,7 @@
 
     // Colors
     --color-black: #000;
+    --color-text: var(--color-black);
     --color-border: #f1f1f1;
     --color-border-input: #c7c7c7;
 
@@ -88,6 +89,12 @@ body {
     &.active:hover {
         background-color: transparent;
         border-bottom-color: var(--color-border-input);
+    }
+}
+
+.nav-tabs {
+    .nav-link &.active {
+        color: var(--color-text);
     }
 }
 
@@ -183,13 +190,16 @@ a.dropdown-toggle:focus-visible,
 button.btn-close:focus-visible,
 .form-autocomplete-selection:focus-visible,
 [role="treeitem"]:not([aria-expanded="true"]):focus-visible {
-    box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 0.75);
+    box-shadow: 0 0 0 0.2rem var(--color-black);
 }
 
 // Course Content Typography
 .section-title {
     font-size: var(--font-size-xl) !important;
 }
-.section, .activity-item, .activity, .hasbackground {
+.section,
+.activity-item,
+.activity,
+.hasbackground {
     border-radius: 0px !important;
 }
