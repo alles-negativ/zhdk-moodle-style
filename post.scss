@@ -13,6 +13,7 @@
 
     // Colors
     --color-black: #000;
+    --color-text: var(--color-black);
     --color-border: #f1f1f1;
     --color-border-input: #c7c7c7;
 
@@ -75,7 +76,7 @@ body {
 }
 
 #usernavigation {
-    .navbar-nav {
+    &.navbar-nav {
         gap: calc(var(--gap-nav) / 2);
     }
 }
@@ -84,9 +85,22 @@ body {
     border-bottom-width: var(--border-width);
 
     &:hover,
-    &:focus-visible {
+    &:focus-visible,
+    &.active:hover {
         background-color: transparent;
         border-bottom-color: var(--color-border-input);
+    }
+}
+
+.nav-tabs {
+    .nav-link &.active {
+        color: var(--color-text);
+    }
+}
+
+.secondary-navigation {
+    .navigation {
+        border-bottom: var(--border-width) solid var(--color-border);
     }
 }
 
@@ -94,6 +108,7 @@ body {
 .editmode-switch-form {
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-nav);
+    padding-left: calc(var(--gap-nav) / 2);
 
     label {
         display: flex;
@@ -182,14 +197,17 @@ a.dropdown-toggle:focus-visible,
 button.btn-close:focus-visible,
 .form-autocomplete-selection:focus-visible,
 [role="treeitem"]:not([aria-expanded="true"]):focus-visible {
-    box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 0.75);
+    box-shadow: 0 0 0 0.2rem var(--color-black);
 }
 
 // Course Content Typography
 .section-title {
     font-size: var(--font-size-xl) !important;
 }
-.section, .activity-item, .activity, .hasbackground {
+.section,
+.activity-item,
+.activity,
+.hasbackground {
     border-radius: 0px !important;
 }
 .course-section-summary-wrapper {
