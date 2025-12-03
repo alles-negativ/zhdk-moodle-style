@@ -98,6 +98,12 @@ body {
     }
 }
 
+.secondary-navigation {
+    .navigation {
+        border-bottom: var(--border-width) solid var(--color-border);
+    }
+}
+
 // Edit button
 .editmode-switch-form {
     font-size: var(--font-size-sm);
