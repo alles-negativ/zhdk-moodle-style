@@ -10,6 +10,10 @@
     // Font Weights
     --font-weight-nav: 700;
     --font-weight-button: 700;
+
+    // Colors
+    --color-black: #000;
+    --color-border: #f1f1f1;
 }
 
 body {
@@ -30,6 +34,9 @@ body {
 }
 
 // Navigation
+.navbar.fixed-top {
+    border-bottom: 2px solid var(--color-border);
+}
 //// warning: styling main navigation and subnavitation
 .navigation {
     .nav-link {
