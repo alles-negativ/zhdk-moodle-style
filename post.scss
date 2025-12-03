@@ -71,6 +71,13 @@ body {
 .nav-tabs {
     gap: var(--gap-nav);
 }
+
+#usernavigation {
+    .navbar-nav {
+        gap: calc(var(--gap-nav) / 2);
+    }
+}
+
 .moremenu .nav-link {
     border-bottom-width: var(--border-width);
 }
