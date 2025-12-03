@@ -43,9 +43,11 @@ body {
 // Navigation
 .navbar.fixed-top {
     border-bottom: var(--border-width) solid var(--color-border);
+    height: calc(60px - var(--border-width));
 
     .divider {
-        border: var(--border-width) solid var(--color-border);
+        width: var(--border-width);
+        background-color: var(--color-border);
         height: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -69,6 +71,16 @@ body {
 .navbar-nav,
 .nav-tabs {
     gap: var(--gap-nav);
+}
+
+#usernavigation {
+    .navbar-nav {
+        gap: calc(var(--gap-nav) / 2);
+    }
+}
+
+.moremenu .nav-link {
+    border-bottom-width: var(--border-width);
 }
 
 // Edit button
@@ -99,6 +111,12 @@ body {
             height: calc(1.25rem - 8px);
             background-color: var(--color-border-input);
         }
+    }
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+        transform: translateX(2.13rem);
     }
 }
 
@@ -159,7 +177,6 @@ button.btn-close:focus-visible,
 [role="treeitem"]:not([aria-expanded="true"]):focus-visible {
     box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 0.75);
 }
-
 
 // Course Content Typography
 .section-title {
