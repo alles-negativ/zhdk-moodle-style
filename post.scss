@@ -22,7 +22,20 @@ body {
 
 // Navigation
 //// warning: styling main navigation and subnavitation
+.navigation {
+    .nav-link {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-nav;
+    }
+}
+
+.primary-navigation .navigation .nav-link,
 .navigation .nav-link {
-    font-size: $font-size-sm;
-    font-weight: $font-weight-nav;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-nav,
+.nav-tabs {
+    gap: 20px;
 }
