@@ -90,6 +90,7 @@ body {
     .custom-control-label {
         &::before {
             border: var(--border-width) solid var(--color-border-input);
+            width: 2.06rem;
         }
 
         &::after {
@@ -97,6 +98,7 @@ body {
             left: calc(-2.6875rem + 4px);
             width: calc(1.25rem - 8px);
             height: calc(1.25rem - 8px);
+            background-color: var(--color-border-input);
         }
     }
 }
