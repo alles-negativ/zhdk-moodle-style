@@ -51,6 +51,7 @@ body {
         height: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
+        border-left: 0 !important;
     }
 }
 
@@ -81,6 +82,12 @@ body {
 
 .moremenu .nav-link {
     border-bottom-width: var(--border-width);
+
+    &:hover,
+    &:focus-visible {
+        background-color: transparent;
+        border-bottom-color: var(--color-border-input);
+    }
 }
 
 // Edit button
@@ -116,7 +123,7 @@ body {
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label {
     &::after {
-        transform: translateX(2.13rem);
+        transform: translateX(0.866rem);
     }
 }
 
