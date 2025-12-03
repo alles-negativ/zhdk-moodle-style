@@ -42,14 +42,13 @@ body {
 
 // Navigation
 .navbar.fixed-top {
-        border-bottom: var(--border-width) solid var(--color-border);
+    border-bottom: var(--border-width) solid var(--color-border);
 
-        .divider {
-            border: var(--border-width) solid var(--color-border);
-            height: 100% !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
+    .divider {
+        border: var(--border-width) solid var(--color-border);
+        height: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 
