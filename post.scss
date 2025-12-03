@@ -226,15 +226,20 @@ button.btn-close:focus-visible,
     border-radius: 0px !important;
 }
 
-.section,
-.activity-item,
+.card,
 .activity {
     border: var(--border-width) solid var(--color-border) !important;
+}
+
+.activity-item {
+    border: 0 !important;
+    background-color: #f1f1f1 !important;
 }
 
 .course-section-summary-wrapper {
     gap: 0px !important;
 }
+
 .section .side.right {
     margin-top: 4px !important;
 }
