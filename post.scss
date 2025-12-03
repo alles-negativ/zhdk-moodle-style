@@ -1,7 +1,7 @@
 // Global
-:root {
+/* :root {
     --font-family-sans-serif: $font-family;
-}
+} */
 
 body {
     font-family: $font-family;
@@ -19,10 +19,10 @@ body {
 .fa {
     font-family: "test";
 }
-
+/*
 // Navigation
 //// warning: styling main navigation and subnavitation
-/* .navigation {
+.navigation {
     .nav-link {
         font-size: $font-size-sm;
         font-weight: $font-weight-nav;
