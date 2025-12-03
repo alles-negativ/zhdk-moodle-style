@@ -108,6 +108,7 @@ body {
 .editmode-switch-form {
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-nav);
+    padding-left: calc(var(--gap-nav) / 2);
 
     label {
         display: flex;
