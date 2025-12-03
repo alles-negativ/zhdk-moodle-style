@@ -14,6 +14,9 @@
     // Colors
     --color-black: #000;
     --color-border: #f1f1f1;
+
+    // Gaps
+    --gap-nav: 1.333rem;
 }
 
 body {
@@ -53,7 +56,23 @@ body {
 
 .navbar-nav,
 .nav-tabs {
-    gap: 20px;
+    gap: var(--gap-nav);
+}
+
+// Edit button
+.editmode-switch-form {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-nav);
+
+    label {
+        display: flex;
+        align-items: center;
+        margin-right: calc(var(--gap-nav) / 2) !important;
+    }
+
+    .custom-switch {
+        display: flex;
+    }
 }
 
 // Focus
