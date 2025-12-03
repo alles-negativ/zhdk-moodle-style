@@ -92,6 +92,10 @@ body {
         }
 
         &::after {
+            top: calc(0.078125rem + 4px);
+            left: calc(-2.6875rem + 4px);
+            width: calc(1.25rem - 8px);
+            height: calc(1.25rem - 8px);
         }
     }
 }
