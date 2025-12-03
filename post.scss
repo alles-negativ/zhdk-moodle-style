@@ -48,3 +48,61 @@ body {
 .nav-tabs {
     gap: 20px;
 }
+
+// Focus
+.aabtn.focus,
+.aabtn:focus,
+.btn-link.focus,
+.btn-link:focus,
+.nav-link.focus,
+.nav-link:focus,
+.editor_atto_toolbar button.focus,
+.editor_atto_toolbar button:focus,
+.editor_atto_toolbar .atto_toolbar_row.focus,
+.editor_atto_toolbar .atto_toolbar_row:focus,
+[role="button"].focus,
+[role="button"]:focus,
+.list-group-item-action.focus,
+.list-group-item-action:focus,
+input[type="checkbox"].focus,
+input[type="checkbox"]:focus,
+input[type="radio"].focus,
+input[type="radio"]:focus,
+input[type="file"].focus,
+input[type="file"]:focus,
+input[type="image"].focus,
+input[type="image"]:focus,
+.sr-only-focusable.focus,
+.sr-only-focusable:focus,
+a.dropdown-toggle.focus,
+a.dropdown-toggle:focus,
+.moodle-dialogue-base .closebutton.focus,
+.moodle-dialogue-base .closebutton:focus,
+button.btn-close.focus,
+button.btn-close:focus,
+.form-autocomplete-selection.focus,
+.form-autocomplete-selection:focus,
+[role="treeitem"]:not([aria-expanded="true"]).focus,
+[role="treeitem"]:not([aria-expanded="true"]):focus {
+    box-shadow: none;
+}
+
+.aabtn:focus-visible,
+.btn-link:focus-visible,
+.nav-link:focus-visible,
+.editor_atto_toolbar button:focus-visible,
+.editor_atto_toolbar .atto_toolbar_row:focus-visible,
+[role="button"]:focus-visible,
+.list-group-item-action:focus-visible,
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible,
+input[type="file"]:focus-visible,
+input[type="image"]:focus-visible,
+.sr-only-focusable:focus-visible,
+a.dropdown-toggle:focus-visible,
+.moodle-dialogue-base .closebutton:focus-visible,
+button.btn-close:focus-visible,
+.form-autocomplete-selection:focus-visible,
+[role="treeitem"]:not([aria-expanded="true"]):focus-visible {
+    box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 0.75);
+}
