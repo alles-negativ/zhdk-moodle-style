@@ -114,7 +114,7 @@ body {
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label {
-    ::after {
+    &::after {
         transform: translateX(2.13rem);
     }
 }
