@@ -226,6 +226,12 @@ button.btn-close:focus-visible,
     border-radius: 0px !important;
 }
 
+.section,
+.activity-item,
+.activity {
+    border: var(--border-width) solid var(--border-color) !important;
+}
+
 .course-section-summary-wrapper {
     gap: 0px !important;
 }
@@ -234,8 +240,9 @@ button.btn-close:focus-visible,
 }
 
 // Activity Container
-.activityiconcontainer {
-    position: absolute !important;
+.title-activity-container {
+    display: flex;
+    gap: var(--gap-nav);
 }
 
 .activityinstance {
