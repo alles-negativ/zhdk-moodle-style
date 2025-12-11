@@ -228,7 +228,7 @@ button.btn-close:focus-visible,
     border-radius: 0px !important;
 }
 
-.card,
+// .card,
 .activity {
     border: var(--border-width) solid var(--color-border) !important;
 }
@@ -262,4 +262,8 @@ button.btn-close:focus-visible,
 .instancename {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-title);
+}
+
+body#page-course-view-remuiformat .remui-format-list .card-footer ul.section .activity .activity-item .activity-grid>*:not(.activity-instance):not(.activityiconcontainer):not(.activity-actions) {
+    margin-left: 0 !important;
 }
