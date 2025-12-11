@@ -265,7 +265,8 @@ button.btn-close:focus-visible,
     gap: 0px !important;
 }
 
-.course-section-summary-wrapper h3 {
+.course-section-summary-wrapper h3,
+.course-section-summary-wrapper a {
     color: var(--color-text) !important;
 }
 
@@ -308,4 +309,8 @@ body#page-course-view-remuiformat .remui-format-list .card-footer ul.section .ac
 
 .coursesummary {
     color: black !important;
+}
+
+body#page-course-view-remuiformat .remui-format-list.all-section-format ul.sections li.section .content ul.section {
+    border: 2px solid var(--color-border) !important;
 }
