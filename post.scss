@@ -252,6 +252,10 @@ button.btn-close:focus-visible,
     border: var(--border-width) solid var(--color-border) !important;
 }
 
+#section-0 {
+    border: 0 !important;
+}
+
 .activity-item {
     border: 0 !important;
 }
