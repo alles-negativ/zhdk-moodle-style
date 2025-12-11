@@ -91,6 +91,10 @@ body {
     gap: var(--gap-nav);
 }
 
+.nav-tabs .nav-link.active {
+    color: var(--color-text) !important;
+}
+
 #usernavigation {
     &.navbar-nav {
         gap: calc(var(--gap-nav) / 2);
