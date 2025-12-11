@@ -267,3 +267,7 @@ button.btn-close:focus-visible,
 body#page-course-view-remuiformat .remui-format-list .card-footer ul.section .activity .activity-item .activity-grid>*:not(.activity-instance):not(.activityiconcontainer):not(.activity-actions) {
     margin-left: 0 !important;
 }
+
+.drawer-toggles .drawer-toggler .btn {
+    border: 0 !important;
+}
