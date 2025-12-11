@@ -256,6 +256,10 @@ button.btn-close:focus-visible,
     border: 0 !important;
 }
 
+.remuiformat .course-section .section-item {
+    border: var(--border-width) solid var(--color-border) !important;
+}
+
 // .card,
 .activity, .section {
     border: var(--border-width) solid var(--color-border) !important;
