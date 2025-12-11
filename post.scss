@@ -252,6 +252,10 @@ button.btn-close:focus-visible,
     border-radius: 0px !important;
 }
 
+.course-section .section-item {
+    border: 0 !important;
+}
+
 // .card,
 .activity, .section {
     border: var(--border-width) solid var(--color-border) !important;
