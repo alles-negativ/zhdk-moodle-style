@@ -1,3 +1,5 @@
+// CUSTOM VARIABLES
+// ------------------------------------------------------------
 :root {
     --font-family-sans-serif: Helvetica, "Segoe UI", Arial, sans-serif;
 
@@ -29,24 +31,33 @@
     --border-radius: 0;
 }
 
+
+// FONT IMPLEMENTATION
+// ------------------------------------------------------------
+
+// Change the Font Family for the page
 body {
     font-family: var(--font-family-sans-serif);
 }
 
-// Icons
+// To change the icons, we need modiify the original font awesome file, upload it in the admin panel
 @font-face {
-    font-family: "test";
+    font-family: "modified-font-awesome";
     src: url("https://dev.paul.zhdk.ch/pluginfile.php/1/theme_boost_union/customfonts/0/FontAwesome7Free-Solid.woff2")
         format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 
+// Use the modified font family for all font awesome icons
 .fa {
-    font-family: "test";
+    font-family: "modified-font-awesome";
 }
 
-// Navigation
+
+// NAVIGATION
+// ------------------------------------------------------------
+
 .navbar.fixed-top {
     border-bottom: var(--border-width) solid var(--color-border);
     height: calc(60px - var(--border-width));
@@ -61,7 +72,7 @@ body {
     }
 }
 
-//// warning: styling main navigation and subnavitation
+// WARNING: styling main navigation and subnavitation
 .navigation {
     .nav-link {
         font-size: var(--font-size-sm);
@@ -147,7 +158,10 @@ body {
     }
 }
 
-// Dropdown
+
+// DROPDOWN
+// ------------------------------------------------------------
+
 .dropdown-menu {
     border: var(--border-width) solid var(--color-border-input);
     border-radius: var(--border-radius);
@@ -158,7 +172,10 @@ body {
     border-top-width: var(--border-width);
 }
 
-// Focus
+
+// FOCUS
+// ------------------------------------------------------------
+
 .aabtn.focus,
 .aabtn:focus,
 .btn-link.focus,
@@ -216,6 +233,8 @@ button.btn-close:focus-visible,
     box-shadow: 0 0 0 0.2rem var(--color-black);
 }
 
+
+
 // Course Content Typography
 .section-title {
     font-size: var(--font-size-xl) !important;
@@ -268,6 +287,7 @@ body#page-course-view-remuiformat .remui-format-list .card-footer ul.section .ac
     margin-left: 0 !important;
 }
 
+.courseindex .courseindex-item,
 .drawer-toggles .drawer-toggler .btn {
     border-radius: 0 !important;
 }
