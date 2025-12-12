@@ -339,3 +339,7 @@ body#page-course-view-remuiformat .remui-format-list.all-section-format ul.secti
     border-radius: 0 !important;
     color: var(--color-text) !important;
 }
+
+hr {
+    border-top: var(--border-width) solid var(--color-border) !important;
+}
