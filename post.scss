@@ -334,3 +334,8 @@ body#page-course-view-remuiformat .remui-format-list.all-section-format ul.secti
 .modal {
     backdrop-filter: blur(3px) !important;
 }
+
+.category .badge {
+    border-radius: 0 !important;
+    color: var(--color-text) !important;
+}
