@@ -330,3 +330,7 @@ body#page-course-view-remuiformat .remui-format-list.all-section-format ul.secti
 .btn {
     border-radius: 0 !important;
 }
+
+.modal {
+    backdrop-filter: blur(3px) !important;
+}
