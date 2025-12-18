@@ -331,9 +331,22 @@ body#page-course-view-remuiformat .remui-format-list.all-section-format ul.secti
     border-top: 2px solid var(--color-border) !important;
 }
 
+
+// BUTTONS
+// ------------------------------------------------------------
+
 .btn {
     border-radius: 0 !important;
 }
+
+// Icon buttons need to remain rounded
+.btn.btn-icon {
+    border-radius: 50% !important;
+}
+
+
+// EXTRA CHANGES
+// ------------------------------------------------------------
 
 .modal {
     backdrop-filter: blur(3px) !important;
@@ -348,6 +361,8 @@ hr {
     border-top: var(--border-width) solid var(--color-border) !important;
 }
 
-.btn.btn-icon {
-    border-radius: 50% !important;
+.simplesearchform .input-group input.form-control
+.simplesearchform .input-group input.form-control .rounded {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;   
 }
