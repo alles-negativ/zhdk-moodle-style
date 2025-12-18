@@ -362,7 +362,8 @@ hr {
 }
 
 .simplesearchform .input-group input.form-control,
-.simplesearchform .input-group input.form-control .rounded {
+.simplesearchform .input-group input.form-control .rounded,
+.custom-select {
     border-radius: 0 !important; 
 }
 
